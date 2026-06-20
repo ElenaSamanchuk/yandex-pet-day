@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yandex Pet Day — pet-tech конференция</title>
+    <meta
+      name="description"
+      content="Конференция по digital-продуктам в сфере зообизнеса. 20 июня 2026, Москва и онлайн."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <header
+      id="header"
+      class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-colors duration-300"
+    >
+      <div class="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-5 md:px-10 lg:px-[120px]">
+        <a href="#" class="group flex items-center gap-3">
+          <span class="flex h-10 w-10 shrink-0 transition group-hover:opacity-90">
+            <img src="/assets/logo.svg" alt="Pet Day" class="h-10 w-10" width="40" height="40" />
+          </span>
+          <span class="text-base font-bold tracking-tight md:text-lg">Yandex Pet Day</span>
+        </a>
+
+        <nav class="hidden items-center gap-8 lg:flex" aria-label="Навигация">
+          <a href="#benefits" class="text-sm font-medium text-ink-muted transition hover:text-brand">Вы сможете</a>
+          <a href="#speakers" class="text-sm font-medium text-ink-muted transition hover:text-brand">Спикеры</a>
+          <a href="#schedule" class="text-sm font-medium text-ink-muted transition hover:text-brand">Программа</a>
+          <a href="#register" class="text-sm font-medium text-ink-muted transition hover:text-brand">Присоединяйтесь</a>
+          <a href="#faq" class="text-sm font-medium text-ink-muted transition hover:text-brand">Вопрос-ответ</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a
+            href="#register"
+            class="btn-header hidden sm:inline-flex"
+          >
+            Участвовать
+          </a>
+          <button
+            id="burger"
+            class="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-xl border border-border bg-white lg:hidden"
+            aria-label="Меню"
+            aria-expanded="false"
+          >
+            <span class="h-0.5 w-5 rounded bg-ink"></span>
+            <span class="h-0.5 w-5 rounded bg-ink"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav
+        id="mobileNav"
+        class="invisible grid max-h-0 overflow-hidden border-t border-border bg-white/95 opacity-0 backdrop-blur-xl transition-all duration-300 lg:hidden"
+      >
+        <div class="mx-auto flex w-full max-w-[1440px] flex-col gap-1 px-5 py-4">
+          <a href="#benefits" class="mobile-link rounded-xl px-4 py-3 text-sm font-medium">Вы сможете</a>
+          <a href="#speakers" class="mobile-link rounded-xl px-4 py-3 text-sm font-medium">Спикеры</a>
+          <a href="#schedule" class="mobile-link rounded-xl px-4 py-3 text-sm font-medium">Программа</a>
+          <a href="#register" class="mobile-link rounded-xl px-4 py-3 text-sm font-medium">Присоединяйтесь</a>
+          <a href="#faq" class="mobile-link rounded-xl px-4 py-3 text-sm font-medium">Вопрос-ответ</a>
+          <a href="#register" class="btn-secondary mt-2 px-5 py-3 text-center">Участвовать</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-bg pt-16">
+        <div class="section-inner grid grid-cols-1 items-center gap-8 section-wrap-hero lg:grid-cols-[1.08fr_0.92fr] lg:gap-12">
+          <div class="order-1 lg:col-start-1">
+            <div class="mb-6 flex flex-nowrap gap-2 md:mb-8">
+              <span class="hero-badge-accent">20 июня 2026</span>
+              <span class="hero-badge-neutral">11:00</span>
+              <span class="hero-badge-neutral min-w-0 shrink">
+                <span class="truncate md:hidden">Офлайн · Онлайн</span>
+                <span class="hidden md:inline">Офлайн «Академия» Москва · Онлайн</span>
+              </span>
+            </div>
+
+            <h1 class="heading-main">
+              Конференция по digital-продуктам в&nbsp;сфере зообизнеса и&nbsp;сервисов для животных
+            </h1>
+
+            <p class="text-desc-lg mt-6 max-w-2xl md:mt-8">
+              Разбираем кейсы: как зооморфизм в интерфейсах повышает удержание, почему ИИ-диагностика питомцев — новый рынок, и как монетизировать аудиторию, которая готова платить за здоровье и комфорт своих животных
+            </p>
+
+            <div class="mt-8 md:mt-10">
+              <a href="#register" class="btn-primary px-6">Участвовать</a>
+            </div>
+          </div>
+
+          <div class="relative order-2 mx-auto w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] lg:col-start-2 lg:mx-0 lg:ml-auto lg:max-w-[420px]">
+            <div class="relative overflow-hidden rounded-2xl border border-border shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
+              <img
+                src="/assets/hero-phone-mockup-yandex-colors.png"
+                alt="Мокап приложения Pet Day в фирменных цветах Яндекса"
+                class="aspect-[4/5] w-full object-cover object-top"
+                width="640"
+                height="800"
+              />
+              <div class="absolute left-4 top-4 flex items-center gap-2 rounded-lg border border-border bg-white/95 px-3 py-2 backdrop-blur-sm">
+                <span class="h-3.5 w-0.5 shrink-0 rounded-sm bg-brand" aria-hidden="true"></span>
+                <span class="text-xs font-semibold uppercase tracking-[0.12em] text-brand-on-soft">Pet-tech</span>
+                <span class="text-xs font-medium text-ink-muted">2026</span>
+              </div>
+              <div class="absolute bottom-4 right-4 rounded-lg border border-border bg-white/95 px-4 py-3 backdrop-blur-sm shadow-sm">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-muted">Организатор</p>
+                <p class="mt-1 text-sm font-semibold leading-tight text-ink">
+                  <span class="text-yandex">Яндекс</span> Реклама
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="section-wrap bg-surface-2">
+        <div class="section-inner">
+          <div class="section-head">
+            <h2 class="heading-section">Вы сможете</h2>
+            <p class="text-desc mt-4 max-w-3xl md:mt-5">
+              Yandex Pet Day — конференция для разработчиков, дизайнеров и проджектов, которые делают продукты для владельцев домашних животных и их питомцев
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
+            <article class="card-interactive flex h-full flex-col rounded-2xl border border-border bg-surface p-5 md:p-6">
+              <h3 class="heading-card">Выбрать удобный формат участия</h3>
+              <p class="text-card-body mt-2 flex-1">
+                Прийти лично или подключиться к онлайн-трансляции из любой точки мира
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="pill">Офлайн · «Академия»</span>
+                <span class="pill">Онлайн</span>
+              </div>
+            </article>
+
+            <article class="card-interactive flex h-full flex-col rounded-2xl border border-border bg-surface p-5 md:p-6">
+              <h3 class="heading-card">Завязать новые полезные знакомства</h3>
+              <p class="text-card-body mt-2 flex-1">
+                На конференции соберутся ключевые представители pet-индустрии, владельцы digital-продуктов, топ-менеджеры технологических компаний и инвесторы
+              </p>
+            </article>
+
+            <article class="card-interactive flex h-full flex-col rounded-2xl border border-border bg-surface p-5 md:p-6">
+              <h3 class="heading-card">Узнать о трендах и реальных кейсах</h3>
+              <p class="text-card-body mt-2 flex-1">
+                Ведущие эксперты рынка на реальных примерах покажут, как внедрение ИИ, работа с лояльностью и новые форматы монетизации приносят рост выручки
+              </p>
+            </article>
+
+            <article class="card-interactive flex h-full flex-col rounded-2xl border border-border bg-surface p-5 md:p-6">
+              <h3 class="heading-card">Получить практические инструменты для роста</h3>
+              <p class="text-card-body mt-2 flex-1">
+                Вы унесёте с собой не только впечатления, но и готовые механики, которые сможете применить в своём продукте
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="speakers" class="section-wrap bg-bg">
+        <div class="section-inner">
+          <div class="section-head">
+            <h2 class="heading-section">Спикеры</h2>
+            <p class="text-desc mt-4 max-w-2xl md:mt-5">
+              Эксперты pet-tech и digital-продуктов — с темами докладов из программы конференции
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-5 md:items-stretch">
+            <article class="card-interactive flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface">
+              <div class="relative aspect-[5/4] shrink-0 overflow-hidden bg-surface-2">
+                <img src="/assets/speaker-andrey-photo.png" alt="Андрей Соколов" class="h-full w-full object-cover object-top" width="400" height="320" />
+              </div>
+              <div class="flex flex-1 flex-col p-5 md:p-6">
+                <h3 class="heading-card">Андрей Соколов</h3>
+                <p class="text-speaker-role mt-2">Head of Product Design, <span class="text-yandex">Яндекс</span></p>
+                <p class="mt-4 pill">CV в ветеринарии</p>
+              </div>
+            </article>
+
+            <article class="card-interactive flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface">
+              <div class="relative aspect-[5/4] shrink-0 overflow-hidden bg-surface-2">
+                <img src="/assets/speaker-maria-photo.png" alt="Мария Подольская" class="h-full w-full object-cover object-top" width="400" height="320" />
+              </div>
+              <div class="flex flex-1 flex-col p-5 md:p-6">
+                <h3 class="heading-card">Мария Подольская</h3>
+                <p class="text-speaker-role mt-2">Head of AI, Лаборатория инноваций</p>
+                <p class="mt-4 pill">Зооморфизм</p>
+              </div>
+            </article>
+
+            <article class="card-interactive flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface">
+              <div class="relative aspect-[5/4] shrink-0 overflow-hidden bg-surface-2">
+                <img src="/assets/speaker-pavel-photo.png" alt="Павел Сидоров" class="h-full w-full object-cover object-top" width="400" height="320" />
+              </div>
+              <div class="flex flex-1 flex-col p-5 md:p-6">
+                <h3 class="heading-card">Павел Сидоров</h3>
+                <p class="text-speaker-role mt-2">CEO, маркетплейс зоотоваров «Зоо-Маркет»</p>
+                <p class="mt-4 pill">Стартап → маркетплейс</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="section-wrap bg-surface-2">
+        <div class="section-inner">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,360px)_minmax(0,1fr)] lg:gap-16">
+            <aside class="contents lg:block lg:sticky lg:top-24 lg:col-start-1 lg:row-start-1 lg:self-start">
+              <div class="order-1">
+                <h2 class="heading-section">Программа</h2>
+                <p class="text-desc mt-4 md:mt-5">
+                  Встречаемся в ивент-пространстве «Академия», Москва, Ленинградский проспект 3
+                </p>
+              </div>
+              <div class="order-3 mt-6 overflow-hidden rounded-2xl border border-border bg-surface lg:order-none">
+                <img src="/assets/map-academia.png" alt="Схема «Академия»" class="aspect-[4/3] w-full object-cover" width="340" height="255" />
+                <div class="border-t border-border p-4">
+                  <a href="https://yandex.ru/maps/?text=Ленинградский%20проспект%2C%203%2C%20Москва" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-brand hover:underline">
+                    Открыть в Яндекс Картах →
+                  </a>
+                </div>
+              </div>
+            </aside>
+
+            <div class="relative order-2 w-full min-w-0 space-y-0 lg:col-start-2 lg:row-start-1">
+              <div class="timeline-rail" aria-hidden="true"></div>
+
+              <article class="timeline-item">
+                <div class="timeline-dot"><span class="h-2 w-2 rounded-full bg-brand" aria-hidden="true"></span></div>
+                <div>
+                  <time class="text-meta font-semibold">10:00 – 10:30</time>
+                  <h3 class="heading-card mt-1">Приветственный кофе</h3>
+                  <p class="text-desc mt-1">Нетворкинг с участниками и партнёрами (только офлайн)</p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-dot"><span class="h-2 w-2 rounded-full bg-brand" aria-hidden="true"></span></div>
+                <div>
+                  <time class="text-meta font-semibold">11:00 – 11:30</time>
+                  <h3 class="heading-card mt-1">Вводное слово</h3>
+                  <p class="text-desc mt-1">Андрей Соколов, Head of Product Design, <span class="text-yandex">Яндекс</span></p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-dot"><span class="h-2 w-2 rounded-full bg-brand" aria-hidden="true"></span></div>
+                <div>
+                  <time class="text-meta font-semibold">11:30 – 12:10</time>
+                  <h3 class="heading-card mt-1">«Компьютерное зрение в ветеринарии»</h3>
+                  <p class="text-desc mt-1">Андрей Соколов, Head of Product Design, <span class="text-yandex">Яндекс</span></p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-dot"><span class="h-2 w-2 rounded-full bg-brand" aria-hidden="true"></span></div>
+                <div>
+                  <time class="text-meta font-semibold">12:10 – 12:50</time>
+                  <h3 class="heading-card mt-1">«Зооморфизм как драйвер лояльности»</h3>
+                  <p class="text-desc mt-1">Мария Подольская, Head of AI, Лаборатория инноваций</p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-dot"><span class="h-2 w-2 rounded-full bg-brand/40" aria-hidden="true"></span></div>
+                <div>
+                  <time class="text-meta font-semibold">12:50 – 13:10</time>
+                  <h3 class="heading-card mt-1 font-medium text-ink-muted">Перерыв</h3>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-dot"><span class="h-2 w-2 rounded-full bg-brand" aria-hidden="true"></span></div>
+                <div>
+                  <time class="text-meta font-semibold">13:10 – 13:40</time>
+                  <h3 class="heading-card mt-1">«От стартапа до маркетплейса №1: ошибки и победы»</h3>
+                  <p class="text-desc mt-1">Павел Сидоров — CEO, маркетплейс зоотоваров «Зоо-Маркет»</p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-dot"><span class="h-2 w-2 rounded-full bg-brand" aria-hidden="true"></span></div>
+                <div>
+                  <time class="text-meta font-semibold">13:40 – 15:00</time>
+                  <h3 class="heading-card mt-1">Дискуссия «Инвестиции в Pet-технологии: пузырь или новая нефть?»</h3>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-dot"><span class="h-2 w-2 rounded-full bg-brand" aria-hidden="true"></span></div>
+                <div>
+                  <time class="text-meta font-semibold">15:00 – 16:30</time>
+                  <h3 class="heading-card mt-1">Нетворкинг</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="register" class="section-wrap bg-bg">
+        <div class="section-inner grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <h2 class="heading-section">Присоединяйтесь</h2>
+            <p class="text-desc mt-4 max-w-md md:mt-5">
+              Офлайн · «Академия», Москва —
+              <a href="https://yandex.ru/maps/?text=Ленинградский%20проспект%2C%203%2C%20Москва" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand hover:underline">открыть на карте</a>
+            </p>
+            <p class="text-desc mt-3 max-w-md">Организатор — <span class="text-yandex">Яндекс</span> Реклама</p>
+          </div>
+
+          <form id="registerForm" class="card p-5 text-ink md:p-8">
+            <div class="flex flex-col gap-4 md:gap-5">
+              <label class="flex flex-col gap-2 text-sm font-medium">
+                Имя
+                <input required name="name" type="text" autocomplete="name" class="input-field py-3.5" />
+              </label>
+              <label class="flex flex-col gap-2 text-sm font-medium">
+                Почта
+                <input required name="email" type="email" autocomplete="email" class="input-field py-3.5" />
+              </label>
+              <fieldset>
+                <legend class="mb-3 text-sm font-medium">Выберите формат участия (онлайн/офлайн)</legend>
+                <div class="grid grid-cols-2 gap-2">
+                  <label class="cursor-pointer">
+                    <input checked type="radio" name="format" value="offline" class="peer sr-only" />
+                    <span class="format-radio peer-checked:border-brand peer-checked:bg-brand-soft peer-checked:text-brand-on-soft">Офлайн</span>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input type="radio" name="format" value="online" class="peer sr-only" />
+                    <span class="format-radio peer-checked:border-brand peer-checked:bg-brand-soft peer-checked:text-brand-on-soft">Онлайн</span>
+                  </label>
+                </div>
+              </fieldset>
+              <p id="formatHint" class="rounded-xl border border-border bg-surface px-4 py-3 text-sm leading-5 text-ink md:text-base md:leading-6">
+                Количество мест ограничено
+              </p>
+              <label id="petField" class="flex min-h-11 cursor-pointer items-center gap-3 rounded-xl border border-border bg-surface px-4 py-3 text-sm font-medium">
+                <input type="checkbox" name="withPet" class="h-4 w-4 shrink-0 accent-brand" />
+                <span>Приду с питомцем</span>
+              </label>
+              <button type="submit" class="btn-primary w-full py-3.5">Зарегистрироваться</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="faq" class="section-wrap bg-surface-2">
+        <div class="section-inner">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,360px)_1fr] lg:gap-16">
+            <div class="lg:sticky lg:top-24 lg:self-start">
+              <h2 class="heading-section">Вопрос-ответ</h2>
+              <button id="openQuestionModal" class="btn-secondary mt-5 md:mt-6">Остались вопросы</button>
+            </div>
+
+            <div id="faqAccordion" class="divide-y divide-border rounded-2xl border border-border bg-surface">
+              <div class="faq-item is-open px-5 py-4 md:px-6">
+                <button class="faq-trigger heading-card font-semibold" aria-expanded="true">
+                  <span class="faq-trigger-text">Кому точно стоит прийти на конференцию?</span>
+                  <span class="faq-icon" aria-hidden="true">−</span>
+                </button>
+                <div class="faq-panel grid grid-rows-[1fr] transition-[grid-template-rows] duration-300">
+                  <div class="overflow-hidden"><p class="faq-answer">Владельцам и сотрудникам digital-продуктов в сфере зообизнеса: маркетплейсы, ветклиники, приложения для груминга, зоомагазины, агрегаторы. А также маркетологам, продактам, дизайнерам и разработчикам, которые хотят зайти в этот быстрорастущий рынок или масштабировать свои проекты</p></div>
+                </div>
+              </div>
+              <div class="faq-item px-5 py-4 md:px-6">
+                <button class="faq-trigger heading-card font-semibold" aria-expanded="false">
+                  <span class="faq-trigger-text">Я могу прийти с питомцем?</span>
+                  <span class="faq-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-300">
+                  <div class="overflow-hidden"><p class="faq-answer">Да, если выбираете офлайн-формат! Мы организуем специальную зону для животных с водой, мисками и необходимыми принадлежностями. Но убедительная просьба: убедитесь, что питомец социализирован и комфортно чувствует себя в обществе людей и других животных. О наличии питомца нужно предупредить заранее при регистрации</p></div>
+                </div>
+              </div>
+              <div class="faq-item px-5 py-4 md:px-6">
+                <button class="faq-trigger heading-card font-semibold" aria-expanded="false">
+                  <span class="faq-trigger-text">Будет ли запись докладов для онлайн-участников?</span>
+                  <span class="faq-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-300">
+                  <div class="overflow-hidden"><p class="faq-answer">Обязательно. Все зарегистрированные участники (и офлайн, и онлайн) получат доступ к видеозаписям, презентациям спикеров и текстовым расшифровкам в течение 3 дней после конференции. Доступ остаётся у вас навсегда</p></div>
+                </div>
+              </div>
+              <div class="faq-item px-5 py-4 md:px-6">
+                <button class="faq-trigger heading-card font-semibold" aria-expanded="false">
+                  <span class="faq-trigger-text">Я из другого города. Есть ли смысл ехать в Москву или достаточно онлайн?</span>
+                  <span class="faq-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-300">
+                  <div class="overflow-hidden"><p class="faq-answer">Зависит от ваших целей. Если вам нужны исключительно знания и контент — онлайн-формата достаточно. Если вы ищете партнёров, инвесторов, хотите «вживую» пообщаться с лидерами рынка и почувствовать комьюнити — приезжайте. Офлайн-участников ждёт закрытый бизнес-завтрак и неформальное общение после основной программы</p></div>
+                </div>
+              </div>
+              <div class="faq-item px-5 py-4 md:px-6">
+                <button class="faq-trigger heading-card font-semibold" aria-expanded="false">
+                  <span class="faq-trigger-text">Будут ли сертификаты или другие документы об участии?</span>
+                  <span class="faq-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-300">
+                  <div class="overflow-hidden"><p class="faq-answer">Да, все участники (онлайн и офлайн) получают именной сертификат участника конференции</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-border bg-surface py-8">
+      <div class="mx-auto flex max-w-[1440px] flex-row items-center justify-between gap-3 px-5 text-xs text-ink-muted sm:text-sm md:px-10 lg:px-[120px]">
+        <p class="shrink-0">© Yandex Pet Day, 2026</p>
+        <a href="/privacy.html" class="shrink-0 text-right transition hover:text-brand"><span class="sm:hidden">Политика</span><span class="hidden sm:inline">Политика конфиденциальности</span></a>
+      </div>
+    </footer>
+
+    <div id="questionModal" class="invisible fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 transition" role="dialog" aria-modal="true">
+      <div id="modalBackdrop" class="absolute inset-0 bg-ink/60 backdrop-blur-sm"></div>
+      <div class="relative w-full max-w-md rounded-2xl bg-surface p-8 shadow-2xl">
+        <button id="closeModal" class="modal-close" aria-label="Закрыть">×</button>
+        <h2 class="heading-section">Остались вопросы</h2>
+        <form id="questionForm" class="mt-6 flex flex-col gap-4">
+          <label class="flex flex-col gap-2 text-sm font-medium">Имя<input required name="qName" type="text" autocomplete="name" class="input-field" /></label>
+          <label class="flex flex-col gap-2 text-sm font-medium">Почта<input required name="qEmail" type="email" autocomplete="email" class="input-field" /></label>
+          <label class="flex flex-col gap-2 text-sm font-medium">Опишите ваш вопрос<textarea required name="qMessage" rows="4" class="input-field"></textarea></label>
+          <button type="submit" class="btn-secondary w-full">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div
+      id="registerToast"
+      class="toast pointer-events-none invisible fixed bottom-6 left-1/2 z-[110] w-[calc(100%-2.5rem)] max-w-md -translate-x-1/2 translate-y-4 opacity-0 transition-all duration-300"
+      role="status"
+      aria-live="polite"
+      hidden
+    >
+      <div class="flex items-start gap-3 rounded-2xl border border-border bg-surface px-5 py-4 shadow-lg">
+        <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand-on-soft" aria-hidden="true">✓</span>
+        <div>
+          <p id="toastTitle" class="text-sm font-semibold text-ink">Регистрация отправлена</p>
+          <p id="toastMessage" class="text-desc mt-1">Подтверждение придёт на указанную почту</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
