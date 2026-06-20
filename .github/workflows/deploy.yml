@@ -27,7 +27,7 @@ jobs:
       - run: npm run build
         env:
           GITHUB_ACTIONS: true
-      - run: cp case.html dist/case.html
+      - run: cp case.html case.css dist/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
