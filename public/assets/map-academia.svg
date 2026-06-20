@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" fill="none">
+  <rect width="640" height="480" fill="#F3F3F3"/>
+  <path d="M80 360 200 120l160 80 200-160v320H80Z" fill="#E5E5E5"/>
+  <circle cx="360" cy="200" r="28" fill="#8533FF" opacity="0.85"/>
+  <circle cx="360" cy="200" r="10" fill="#fff"/>
+  <rect x="48" y="48" width="544" height="384" rx="8" stroke="#E5E5E5" stroke-width="2"/>
+  <text x="320" y="420" text-anchor="middle" fill="#858585" font-family="Manrope, system-ui, sans-serif" font-size="18" font-weight="600">«:045<8O» · 5=8=3@04A:89 ?@., 3</text>
+</svg>
