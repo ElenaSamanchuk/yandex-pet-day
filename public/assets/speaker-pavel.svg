@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <rect width="400" height="320" fill="#F3F3F3"/>
+  <circle cx="200" cy="128" r="72" fill="#F0EBFF"/>
+  <circle cx="200" cy="118" r="44" fill="#8533FF" opacity="0.12"/>
+  <path d="M200 76c18 0 32 14 32 32s-14 32-32 32-32-14-32-32 14-32 32-32Z" fill="#8533FF" opacity="0.35"/>
+  <path d="M128 248c8-36 36-56 72-56s64 20 72 56" fill="#8533FF" opacity="0.2"/>
+  <text x="200" y="126" text-anchor="middle" fill="#6525D1" font-family="Manrope, system-ui, sans-serif" font-size="32" font-weight="700">!</text>
+</svg>
